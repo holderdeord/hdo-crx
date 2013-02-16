@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "HDO Stortingsreferater",
+  "name": "HDO Intern",
   "description": "Hjelp med manuell godkjenning og uthenting av data fra Stortingets nettsider.",
   "version": "1.0",
 
