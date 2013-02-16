@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HDO Chrome Extension Popup</title>
+    <style>
+    body {
+      margin: 0 auto;
+      padding: 20px;
+      min-width: 200px;
+      background-color: #eee;
+      font: 12px/24px arial, sans-serif;
+      cursor: default;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 15px;
+      background-color: #fafafa;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-right: 5px;
+      font-size: 1.1em;
+      line-height: 2.25em;
+      background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.1) inset; }
+
+    .button.like {
+      background-color: #96d5d9;
+      border-color: #298e94; }
+      .button.like:hover {
+        background-color: #a2dadd; }
+      .button.like:active {
+        background-color: #5ebfc5; }
+      .button.like .likes:before {
+        content: ' ('; }
+      .button.like .likes:after {
+        content: ')'; }
+
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1 id="status"></h1>
+    <button class="button like" id="copySelectionAsHtml">Kopier valgt tekst som HTML</button>
+  </body>
+</html>
+

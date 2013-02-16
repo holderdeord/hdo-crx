@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "HDO Stortingsreferater",
+  "description": "Hjelp med manuell godkjenning og uthenting av data fra Stortingets nettsider.",
+  "version": "1.0",
+
+  "permissions": [
+    "http://stortinget.no/",
+    "https://stortinget.no/",
+    "http://www.stortinget.no/",
+    "https://www.stortinget.no/"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "clipboardWrite"
+  ],
+
+  "background": {
+    "page": "background.html"
+  }
+}
