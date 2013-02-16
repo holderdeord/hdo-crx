@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>HDO Chrome Extension Popup</title>
     <style>
     body {
@@ -39,6 +40,10 @@
       .button.like .likes:after {
         content: ')'; }
 
+
+    .hidden {
+      display: none;
+    }
     </style>
 
     <script src="popup.js"></script>
@@ -46,6 +51,7 @@
   <body>
     <h1 id="status"></h1>
     <button class="button like" id="copySelectionAsHtml">Kopier valgt tekst som HTML</button>
+    <button class="button like hidden" id="openAllIssues" >Åpne alle saker</button>
   </body>
 </html>
 
