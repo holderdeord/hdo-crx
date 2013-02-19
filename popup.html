@@ -5,9 +5,9 @@
     <title>HDO Chrome Extension Popup</title>
     <style>
     body {
-      margin: 0 auto;
+      margin: 0 0;
       padding: 20px;
-      min-width: 200px;
+      min-width: 250px;
       background-color: #eee;
       font: 12px/24px arial, sans-serif;
       cursor: default;
@@ -18,6 +18,7 @@
       display: inline-block;
       vertical-align: top;
       padding: 0 15px;
+      margin: 10px 0;
       background-color: #fafafa;
       cursor: pointer;
       border: 1px solid #ccc;
@@ -44,14 +45,25 @@
     .hidden {
       display: none;
     }
+
+    ul.unstyled {
+      list-style-type: none;
+    }
     </style>
 
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1 id="status"></h1>
-    <button class="button like" id="copySelectionAsHtml">Kopier valgt tekst som HTML</button>
-    <button class="button like hidden" id="openAllIssues" >Åpne alle saker</button>
+    <ul class="unstyled">
+      <li>
+        <input type="button" class="button like" id="copySelectionAsHtml" value="Kopier valgt tekst som HTML">
+      </li>
+      <li>
+        <input type="button" class="button like hidden" id="openAllIssues" value="Åpne alle saker">
+      </li>
+    </ul>
+
+    <h3 id="status"></h3>
   </body>
 </html>
 

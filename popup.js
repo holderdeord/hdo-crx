@@ -30,8 +30,8 @@ HdoExtension.prototype.init = function() {
 HdoExtension.prototype.copySelectionAsHtml = function() {
   var hdo = this;
 
-  chrome.extension.getBackgroundPage().copySelectionAsHtml(function() {
-    hdo.setStatus('OK!')
+  chrome.extension.getBackgroundPage().copySelectionAsHtml(function(text) {
+    hdo.setStatus('Kopierte ' + text.length + ' tegn.')
     setTimeout(function() { window.close(); }, 1000)
   });
 };

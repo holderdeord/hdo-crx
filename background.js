@@ -36,7 +36,7 @@ function openAllIssues(callback) {
     hrefs.forEach(function(href) {
       if (href.match(/Referater\/.+\/\d{4}-\d{4}\/(\d{6})\/\d+\/?$/)) {
         opened = true;
-        chrome.tabs.create({url: href});
+        chrome.tabs.create({url: href, active: false});
       }
     });
 
